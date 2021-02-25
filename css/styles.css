@@ -4,10 +4,11 @@
     margin: 0;
 }
 
-html {
+body {
     scroll-behavior: smooth;
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a { 
