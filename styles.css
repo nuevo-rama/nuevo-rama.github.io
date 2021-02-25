@@ -1,0 +1,220 @@
+* { 
+    box-sizing: border-box;
+    scrollbar-width: none;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-attachment: scroll;
+    overflow-x: hidden;
+}
+
+a { 
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wraper {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    perspective: 2px;
+}
+
+.prl-1 {
+    position: absolute;
+    top: 0;
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+}
+
+img {
+    width: 110%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+}
+
+.estatico-1 {
+    position: absolute;
+    top: 12vw;
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    animation-name: animationInicio;
+    animation-duration: 2s;
+}
+
+@keyframes animationInicio {
+    from { top: 100vw}
+    to {top: 12vw}
+}
+
+#nombre h2 {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    line-height: 1;
+    text-shadow: 2px 2px 5px rgb(20, 20, 20);
+    font-size: 2.5vw;
+    animation-name: animationNombre;
+    animation-duration: 10s;
+    font-weight: bold;
+    background-color: rgb(63, 63, 63);
+    padding: 1vw;
+    width: 23vw;
+    height: auto;
+    border-radius: 1vw;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgb(20, 20, 20);
+}
+
+#titulo h2 {
+    display: block;
+    font-size: 4vw;
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(20, 20, 20);
+}
+
+#subtitulo h2 {
+    display: block;
+    font-size: 1.8vw;
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(20, 20, 20);
+}
+
+nav {
+    position: absolute;
+    top: 37vw;
+    margin: auto;
+    width: 100%;
+    animation-name: animationInicioBotones;
+    animation-duration: 3s;
+}
+
+@keyframes animationInicioBotones {
+    from { top: 120vw}
+    to {top: 37vw}
+}
+
+.botonesNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    align-self: stretch;
+    width: 15vw;
+    height: 4vw;
+    margin: 1vw;
+    color: white;
+    background-color: transparent;
+    border: 0.2vw white solid;
+    border-radius: 1vw;
+    font-size: 2vw;
+    font-family: 'Abel', sans-serif;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px rgb(20, 20, 20);
+}
+
+button:hover {
+    background-color:rgb(121, 121, 121);
+    opacity: 0.7;
+}
+
+/*-----------------------------------*/
+
+scroll-container {
+    display: block;
+    overflow-y: scroll;
+}
+
+scroll-page {
+    display: block;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+#page-1 {
+    display: block;
+    width: 100%;
+    height: 35vw;
+    color:rgb(121, 121, 121);
+    position: absolute;
+    background: rgb(119, 151, 142);
+    top: 60vw;
+       
+}
+
+#page-2 {
+    display: block;
+    width: 100%;
+    height: 25vw;
+    color:rgb(121, 121, 121);
+    position: absolute;
+    top: 170vw;
+    background: rgb(91, 128, 153);
+}
+
+.contenidoContainer1 {
+    display: block;
+    width:100%;
+    text-align: center;
+    color: white;
+    line-height: 2;
+}
+
+.contenidoContainer1 section {
+    margin-top: 2vw;
+    box-shadow: 2px 2px 5px rgb(20, 20, 20);
+    background-image: linear-gradient(to right, rgb(68, 76, 74) , rgb(112, 139, 133));
+}
+
+.contenidoContainer1 p {
+    text-align: left;
+    padding: 1.5vw;
+    font-size: 1.2vw;
+    font-family: 'Michroma', sans-serif;
+}
+
+/*------*/
+
+.contenidoIntermedio h3 {
+    text-align: center;
+    padding: 2vw;
+    font-size: 2vw;
+    font-family: 'Michroma', sans-serif;
+    color:rgb(20, 20, 20);
+    position: absolute;
+    display: block;
+    top: 110vw;
+    margin: auto;
+    width: 100%;
+    line-height: 2;
+}
+
+/*------------*/
+
+.contenidoContainer2 {
+    display: block;
+    width:100%;
+    text-align: center;
+}
+
+.contenidoContainer2 a {
+    display: block;
+}
+
+.contenidoContainer2 a button {
+    background-color: rgb(35, 48, 56);
+}
