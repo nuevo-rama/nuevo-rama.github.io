@@ -6,7 +6,6 @@
 
 body {
     scroll-behavior: smooth;
-    /*background-attachment: scroll;*/
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -32,8 +31,8 @@ a {
 }
 
 img {
-    width: 110%;
-    height: auto;
+    width: max-content;
+    height: 65em; /*se puede ajustar mejor*/
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.8;
@@ -150,21 +149,25 @@ scroll-page {
     display: block;
     width: 100%;
     height: 35vw;
-    color:rgb(121, 121, 121);
     position: absolute;
-    background: rgb(119, 151, 142);
-    top: 60vw;
-       
+    background: linear-gradient(90deg, rgb(77, 151, 97) 0%, rgb(12, 87, 141) 100%);
+    top: 60vw;    
 }
 
 #page-2 {
     display: block;
     width: 100%;
+    position: absolute;
+    top: 95vw;
+}
+
+#page-3 {
+    display: block;
+    width: 100%;
     height: 25vw;
-    color:rgb(121, 121, 121);
     position: absolute;
     top: 170vw;
-    background: rgb(91, 128, 153);
+    background: linear-gradient(90deg, rgb(231, 113, 90) 0%, rgb(52, 9, 59) 100%);
 }
 
 .contenidoContainer1 {
@@ -177,8 +180,6 @@ scroll-page {
 
 .contenidoContainer1 section {
     margin-top: 2vw;
-    box-shadow: 2px 2px 5px rgb(20, 20, 20);
-    background-image: linear-gradient(to right, rgb(68, 76, 74) , rgb(112, 139, 133));
 }
 
 .contenidoContainer1 p {
@@ -190,19 +191,41 @@ scroll-page {
 
 /*------*/
 
-.contenidoIntermedio h3 {
-    text-align: center;
+.contenidoIntermedio {
     padding: 2vw;
-    font-size: 2vw;
-    font-family: 'Michroma', sans-serif;
-    color:rgb(20, 20, 20);
     position: absolute;
     display: block;
-    top: 90vw;
     margin: auto;
     width: 100%;
-    line-height: 2;
 }
+
+.contenidoIntermedioFrame {
+    border-radius: 3vw;
+    text-align: center;
+    padding: 3vw;
+    font-family: 'Michroma', sans-serif;
+    margin: auto;
+    width: 50%;
+    background: white;
+    opacity: 50%;
+}
+
+.contenidoIntermedio h2 {
+    font-size: 2vw;
+    color:rgb(70, 70, 70);
+}
+
+.contenidoIntermedio h3 {
+    font-size: 1.5vw;
+    color:rgb(68, 68, 68);
+    padding-top: 2vw;
+}
+
+.contenidoIntermedio h4 {
+    font-size: 1vw;
+    color:rgb(26, 26, 26);
+}
+
 
 /*------------*/
 
@@ -219,3 +242,4 @@ scroll-page {
 .contenidoContainer2 a button {
     background-color: rgb(35, 48, 56);
 }
+
