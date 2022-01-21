@@ -249,14 +249,17 @@ scroll-page {
     img {
         height: 100vh;
     }
+    
     #page-1 {
-        top: 100vh;  
+        top: 80vh;
+        height: 40vh;
     }
     #page-2 {
         top: 120vh;
     }
     #page-3 {
-        top: 170vh;
+        top: 180vh;
+        height: 25vh;
     }
   }
 
