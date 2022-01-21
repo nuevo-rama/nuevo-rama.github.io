@@ -245,6 +245,8 @@ scroll-page {
 
 /*---------MEDIA QUERIES--------*/
 
+/*PHONES*/
+
 @media (max-width: 376px) {
     img {
         height: 100vh;
@@ -263,3 +265,22 @@ scroll-page {
     }
   }
 
+  /*TABLETS*/
+
+  @media (max-width: 1025px) {
+    img {
+        height: 100vh;
+    }
+    
+    #page-1 {
+        top: 100vh;
+        height: 40vh;
+    }
+    #page-2 {
+        top: 140vh;
+    }
+    #page-3 {
+        top: 200vh;
+        height: 25vh;
+    }
+  }
