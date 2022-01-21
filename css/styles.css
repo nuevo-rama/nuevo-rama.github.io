@@ -243,3 +243,20 @@ scroll-page {
     background-color: rgb(35, 48, 56);
 }
 
+/*---------MEDIA QUERIES--------*/
+
+@media (max-width: 376px) {
+    img {
+        height: 100vh;
+    }
+    #page-1 {
+        top: 100vh;  
+    }
+    #page-2 {
+        top: 120vh;
+    }
+    #page-3 {
+        top: 170vh;
+    }
+  }
+
