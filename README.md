@@ -3,4 +3,9 @@
 #### nuevo-rama
 
 
+- Inicio
+- Skills
+- Contacto
+
+
 
